@@ -2,7 +2,7 @@
 
 class Superhero {
     
-    public $name, $gender, $team, $oneline;
+    public $name, $gender, $team, $oneliner;
 
     public function __construct($name, $gender, $team, $oneliner)
     {
@@ -20,6 +20,15 @@ class Superhero {
     {
         echo '<h2>' . $this->oneliner . '</h2>';
     }
-    
 }
+
+class Avenger extends Superhero{
+    public function __construct($name, $gender, $oneliner)
+    {
+    $team = 'Avengers';
+    parent::__construct($name, $gender, $team, $oneliner);
+    }
+}
+
+
 

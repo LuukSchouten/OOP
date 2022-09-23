@@ -7,3 +7,8 @@ $spiderman = new Superhero('Spider-Man', 'Male', 'Spiderfriends', 'With great po
 print_r('<pre>'. $spiderman . '</pre>');
 
 $spiderman->sayOneliner();
+
+$thor = new Avenger('Thor', 'Male', 'For Asgard!');
+$thor->sayOneliner();
+
+print_r('<pre>' . $thor . '</pre>');
