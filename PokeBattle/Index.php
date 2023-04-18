@@ -25,9 +25,17 @@ echo "</br>";
 
 $battle_end = false;
 while (!$battle_end) {
-    $battle_end = $pikachu->attack($pikachu->attacks[0], $charmeleon);
-    if (!$battle_end) {
-        $battle_end = $charmeleon->attack($charmeleon->attacks[3], $pikachu);
+    while (!$battle_end) {
+        // Pikachu attacks Charmeleon
+        $battle_end = $pikachu->attack($pikachu->attacks[0], $charmeleon);
+        if ($battle_end) {
+            break;
+        }
+        // Charmeleon attacks Pikachu
+        $battle_end = $charmeleon->attack($charmeleon->attacks[1], $pikachu);
+        if ($battle_end) {
+            break;
+        }
     }
 }
 
