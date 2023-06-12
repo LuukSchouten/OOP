@@ -1,9 +1,8 @@
 <?php
 
-class Pokemon
+class Weakness
 {
     
-
 }
 
 
