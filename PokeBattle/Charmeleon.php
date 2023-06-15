@@ -15,27 +15,6 @@ class Charmeleon extends Pokemon
 
         parent::__construct($name, $energyType, $hitpoints, $attacks, $weakness, $resistance);
     }
-
-    public function getWeakness()
-    {
-        return $this->weakness;
-    }
-
-    public function getEnergyType()
-    {
-        return $this->energyType;
-    }
-
-    public function takeDamage($damage)
-    {
-    $this->health -= $damage;
-    return $damage;
-    }
-
-    public function getAttacks()
-    {
-        return $this->attacks;
-    }
     
 }
 

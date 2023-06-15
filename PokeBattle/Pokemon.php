@@ -29,6 +29,36 @@ class Pokemon
         return $this->health;
     }
 
+    public function getName()
+    {
+        return $this->getName;
+    }
+
+    public function getWeakness()
+    {
+        return $this->weakness;
+    }
+
+    public function getResistance()
+    {
+        return $this->resistance;
+    }
+
+    public function getEnergyType()
+    {
+        return $this->energyType;
+    }
+
+    public function takeDamage($damage)
+    {
+        $this->health -= $damage;
+        return $damage;
+    }
+
+    public function getAttacks()
+    {
+        return $this->attacks;
+    }
 
 }
 

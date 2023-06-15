@@ -2,9 +2,9 @@
 
 class Attack
 {
-    public $name;
-    public $damage;
-    public $energyType;
+    private $name;
+    private $damage;
+    private $energyType;
 
     public function __construct($name, $damage, $energyType)
     {

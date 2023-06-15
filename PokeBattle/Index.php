@@ -47,4 +47,5 @@ while (Battle::getHealth($pikachu) > 0 && Battle::getHealth($charmeleon) > 0) {
         break; // Exit the loop if Pikachu has fainted
     }
 }
+
 ?>
