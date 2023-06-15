@@ -13,6 +13,11 @@ class Attack
         $this->energyType = $energyType;
     }
 
+    public function getName()
+    {
+        return $this->name;
+    }
+
     public function getDamage()
     {
         return $this->damage;
